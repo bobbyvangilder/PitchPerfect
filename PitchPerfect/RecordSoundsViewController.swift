@@ -27,15 +27,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewWillAppear(animated)
         print("viewWillAppear is getting called.")
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        view
-//    }
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
 
     @IBAction func recordAudio(_ sender: Any) {
         print("Recording has begun.")
@@ -47,9 +38,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
-        
-        //print(dirPath)
-        //print(pathArray)
         
         let session = AVAudioSession.sharedInstance()
         
@@ -72,10 +60,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
 }
 
