@@ -48,9 +48,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
         
-        //print(dirPath)
-        //print(pathArray)
-        
         let session = AVAudioSession.sharedInstance()
         
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
@@ -72,10 +69,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
 }
 
