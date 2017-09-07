@@ -12,6 +12,7 @@
 		4F50AD0A1F5F4B02001D6BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F50AD081F5F4B02001D6BCA /* Main.storyboard */; };
 		4F50AD0C1F5F4B02001D6BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F50AD0B1F5F4B02001D6BCA /* Assets.xcassets */; };
 		4F50AD0F1F5F4B02001D6BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F50AD0D1F5F4B02001D6BCA /* LaunchScreen.storyboard */; };
+		4FFE53261F61BC9E0089A6CA /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFE53251F61BC9E0089A6CA /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4F50AD0B1F5F4B02001D6BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F50AD0E1F5F4B02001D6BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F50AD101F5F4B02001D6BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFE53251F61BC9E0089A6CA /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,11 @@
 		4F50AD031F5F4B02001D6BCA /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
+				4F50AD0B1F5F4B02001D6BCA /* Assets.xcassets */,
 				4F50AD041F5F4B02001D6BCA /* AppDelegate.swift */,
 				4F50AD061F5F4B02001D6BCA /* RecordSoundsViewController.swift */,
+				4FFE53251F61BC9E0089A6CA /* PlaySoundsViewController.swift */,
 				4F50AD081F5F4B02001D6BCA /* Main.storyboard */,
-				4F50AD0B1F5F4B02001D6BCA /* Assets.xcassets */,
 				4F50AD0D1F5F4B02001D6BCA /* LaunchScreen.storyboard */,
 				4F50AD101F5F4B02001D6BCA /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F50AD071F5F4B02001D6BCA /* RecordSoundsViewController.swift in Sources */,
+				4FFE53261F61BC9E0089A6CA /* PlaySoundsViewController.swift in Sources */,
 				4F50AD051F5F4B02001D6BCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
